@@ -1,0 +1,64 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: apiTests\goReadySchemaTest.spec.ts >> validate get user schema
+- Location: tests\apiTests\goReadySchemaTest.spec.ts:33:5
+
+# Error details
+
+```
+Error: expect(received).toBeTruthy()
+
+Received: false
+```
+
+# Test source
+
+```ts
+  1  | import {test,expect} from '../../src/fixtures/apiFixture'
+  2  | import Ajv from 'ajv'
+  3  | 
+  4  | const  AUTH_TOKEN={"Authorization":`${process.env.TOKEN}`}
+  5  | let userSchema={
+  6  |     "type": "object",
+  7  |   "properties": {
+  8  |     "id": {
+  9  |       "type": "integer"
+  10 |     },
+  11 |     "name": {
+  12 |       "type": "string"
+  13 |     },
+  14 |     "email": {
+  15 |       "type": "string"
+  16 |     },
+  17 |     "gender": {
+  18 |       "type": "string"
+  19 |     },
+  20 |     "status": {
+  21 |       "type": "string"
+  22 |     }
+  23 |   },
+  24 |   "required": [
+  25 |     "id",
+  26 |     "name",
+  27 |     "email",
+  28 |     "gender",
+  29 |     "status"
+  30 |   ]
+  31 | }
+  32 | 
+  33 | test('validate get user schema',async({apiHelper})=>{
+  34 | let ajv=new Ajv()
+  35 | let validator=ajv.compile(userSchema)
+  36 | let getResponse=await apiHelper.get_request('public/v2/users/8666857',AUTH_TOKEN)
+> 37 | expect (validator(getResponse)).toBeTruthy()
+     |                                 ^ Error: expect(received).toBeTruthy()
+  38 | 
+  39 | 
+  40 | })
+```

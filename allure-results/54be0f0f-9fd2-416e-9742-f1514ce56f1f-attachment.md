@@ -1,0 +1,249 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seamlessTransaction.spec.ts >> create multiple transaction
+- Location: tests\seamlessTransaction.spec.ts:4:5
+
+# Error details
+
+```
+Test timeout of 15000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - dialog:
+    - generic [ref=e3]:
+      - heading "Empty basket" [level=3] [ref=e5]
+      - generic [ref=e6]:
+        - paragraph [ref=e7]: All products will be removed from the basket.
+        - generic [ref=e9]:
+          - generic [ref=e10]: "Select a reason:"
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - generic [ref=e13] [cursor=pointer]:
+                - text: Customer changed mind
+                - radio "Customer changed mind"
+            - listitem [ref=e14]:
+              - generic [ref=e15] [cursor=pointer]:
+                - text: Colleague mistake
+                - radio "Colleague mistake"
+            - listitem [ref=e16]:
+              - generic [ref=e17] [cursor=pointer]:
+                - text: Payment refused/forgotten
+                - radio "Payment refused/forgotten"
+            - listitem [ref=e18]:
+              - generic [ref=e19] [cursor=pointer]:
+                - text: System error
+                - radio "System error"
+        - generic [ref=e20]:
+          - button "Cancel" [ref=e21] [cursor=pointer]
+          - button "Confirm" [ref=e22] [cursor=pointer]
+  - generic [ref=e25]:
+    - banner [ref=e26]:
+      - 'heading "Basket: 0003" [level=1] [ref=e27]'
+      - navigation [ref=e28]:
+        - list [ref=e29]:
+          - listitem [ref=e30]:
+            - button "Reprint" [ref=e31] [cursor=pointer]
+            - list:
+              - listitem:
+                - button "Standard receipt"
+              - listitem:
+                - button "VAT invoice"
+          - listitem [ref=e33]:
+            - button "Search" [ref=e34] [cursor=pointer]
+            - list:
+              - listitem:
+                - generic: Customer
+              - listitem:
+                - generic: Transaction
+          - listitem
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - heading [level=2] [ref=e38]
+        - generic [ref=e41]:
+          - generic [ref=e43]:
+            - generic [ref=e45] [cursor=pointer]:
+              - generic [ref=e47]: Search
+              - textbox "Search" [disabled] [ref=e48]:
+                - /placeholder: EAN, .com+ order, customer card or receipt
+            - button "Search" [disabled]
+          - generic [ref=e50]:
+            - generic [ref=e52]:
+              - generic [ref=e53]:
+                - generic [ref=e54]:
+                  - heading "SKIP17 HD FIRESTONE EPDM SHED ROOF KIT" [level=3] [ref=e55]
+                  - generic [ref=e56]:
+                    - term [ref=e57]: "EAN:"
+                    - definition [ref=e58]: "5063022503886"
+                - generic [ref=e59]:
+                  - term [ref=e60]: "Quantity:"
+                  - definition [ref=e61]: x5
+                - generic [ref=e62]:
+                  - term [ref=e63]: "Unit Price:"
+                  - definition [ref=e64]: £560.60
+                  - term [ref=e65]: "Line Value:"
+                  - definition [ref=e66]:
+                    - strong [ref=e67]: £2,803.00
+                - paragraph
+              - generic [ref=e68]:
+                - button "Delete" [ref=e69] [cursor=pointer]
+                - button "Markdown" [ref=e70] [cursor=pointer]
+                - button "Price override" [ref=e71] [cursor=pointer]
+                - textbox [ref=e74]: "5"
+            - generic [ref=e77]:
+              - generic [ref=e78]:
+                - heading "IG STEEL BOX LINTEL 100 1500MM" [level=3] [ref=e79]
+                - generic [ref=e80]:
+                  - term [ref=e81]: "EAN:"
+                  - definition [ref=e82]: "5063022504081"
+              - generic [ref=e83]:
+                - term [ref=e84]: "Quantity:"
+                - definition [ref=e85]: x4
+                - term [ref=e86]: Warning
+                - definition [ref=e87]:
+                  - generic [ref=e88]: Over 25
+              - generic [ref=e89]:
+                - term [ref=e90]: "Unit Price:"
+                - definition [ref=e91]: £0.89
+                - term [ref=e92]: "Line Value:"
+                - definition [ref=e93]:
+                  - strong [ref=e94]: £3.56
+              - paragraph
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - heading "DIALL 20MM GRAVEL LARGE" [level=3] [ref=e99]
+                - generic [ref=e100]:
+                  - term [ref=e101]: "EAN:"
+                  - definition [ref=e102]: "5063022504012"
+              - generic [ref=e103]:
+                - term [ref=e104]: "Quantity:"
+                - definition [ref=e105]: x4
+              - generic [ref=e106]:
+                - term [ref=e107]: "Unit Price:"
+                - definition [ref=e108]: £4.00
+                - term [ref=e109]: "Line Value:"
+                - definition [ref=e110]:
+                  - strong [ref=e111]: £16.00
+              - paragraph
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - heading "73MM RHEAD CLASS B SINGLE BRICK" [level=3] [ref=e116]
+                - generic [ref=e117]:
+                  - term [ref=e118]: "EAN:"
+                  - definition [ref=e119]: "5063022504159"
+              - generic [ref=e120]:
+                - term [ref=e121]: "Quantity:"
+                - definition [ref=e122]: x1
+              - generic [ref=e123]:
+                - term [ref=e124]: "Unit Price:"
+                - definition [ref=e125]: £21.20
+                - term [ref=e126]: "Line Value:"
+                - definition [ref=e127]:
+                  - strong [ref=e128]: £21.20
+              - paragraph
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - heading "BASKET TOTALS" [level=2] [ref=e131]
+            - generic [ref=e132]:
+              - term [ref=e133]: Subtotal
+              - definition [ref=e134]: £2,843.76
+            - generic [ref=e135]:
+              - term [ref=e136] [cursor=pointer]:
+                - text: Promotion total
+                - strong [ref=e137]: "-£1,433.40"
+              - definition:
+                - generic [ref=e138]:
+                  - term [ref=e139]: 25% off WYS £2000
+                  - definition [ref=e140]: "-£710.93"
+                  - term [ref=e141]: 20% off WYS £1500
+                  - definition [ref=e142]: "-£426.55"
+                  - term [ref=e143]: 15% off WYS £1000
+                  - definition [ref=e144]: "-£255.92"
+                  - term [ref=e145]: £40 OFF WYS £700
+                  - definition [ref=e146]: "-£40.00"
+            - generic [ref=e147]:
+              - term [ref=e148]:
+                - text: Discount total
+                - strong [ref=e149]: £0.00
+              - definition
+            - generic [ref=e150]:
+              - term [ref=e151]: VAT
+              - definition [ref=e152]: £231.59
+              - term [ref=e153]: Total (14 items)
+              - definition [ref=e154]: £1,410.36
+          - button "Proceed to checkout Next" [ref=e155] [cursor=pointer]:
+            - text: Proceed to checkout
+            - generic [ref=e156]: Next
+      - complementary [ref=e157]:
+        - heading "Basket functions" [level=2] [ref=e158]
+        - button "Returns" [ref=e159] [cursor=pointer]
+        - button "Layaway" [ref=e161] [cursor=pointer]
+        - button "Gift card" [ref=e162] [cursor=pointer]
+        - button "No sale" [ref=e163] [cursor=pointer]
+        - button "Online catalogue" [ref=e165] [cursor=pointer]
+        - button "Price enquiry" [ref=e166] [cursor=pointer]
+        - button "Empty the basket" [ref=e167] [cursor=pointer]
+        - time [ref=e169]:
+          - strong [ref=e170]: 14:26
+          - text: Thu, 15/10/2026
+        - list [ref=e171]:
+          - listitem [ref=e172]:
+            - button "Settings" [ref=e173] [cursor=pointer]
+          - listitem [ref=e174]:
+            - button "Log Out" [ref=e175] [cursor=pointer]
+      - complementary [ref=e176]:
+        - generic [ref=e178]:
+          - heading "Settings" [level=2] [ref=e180]
+          - button "Close" [ref=e182] [cursor=pointer]
+        - generic [ref=e183]:
+          - heading "Details" [level=3] [ref=e184]
+          - list [ref=e185]:
+            - listitem [ref=e186]:
+              - text: "User ID:"
+              - strong [ref=e187]: manager03
+            - listitem [ref=e188]:
+              - text: "Register number:"
+              - strong [ref=e189]: "18"
+            - listitem [ref=e190]:
+              - text: "User name:"
+              - strong [ref=e191]: Manager Test
+            - listitem [ref=e192]:
+              - text: "Browser version:"
+              - strong [ref=e193]: Chrome/153.0.8010.12
+            - listitem [ref=e194]:
+              - text: "Store ID:"
+              - strong [ref=e195]: "1005"
+            - listitem [ref=e196]:
+              - text: "Application version:"
+              - strong [ref=e197]: 8.1.40
+            - listitem [ref=e198]:
+              - text: "Device ID:"
+              - strong [ref=e199]: "100518"
+            - listitem [ref=e200]:
+              - text: "UI version:"
+              - strong [ref=e201]: 6.2.32-patch.0
+        - group "Language" [ref=e202]:
+          - list [ref=e204]:
+            - listitem [ref=e205]:
+              - radio [checked] [disabled]
+              - generic [ref=e207]: English
+            - listitem [ref=e208]:
+              - radio [disabled]
+              - generic [ref=e210]: French
+            - listitem [ref=e211]:
+              - radio [disabled]
+              - generic [ref=e213]: Welsh
+        - generic [ref=e214]:
+          - button "Restart PED" [ref=e215] [cursor=pointer]
+          - button "Generate Pin" [ref=e216] [cursor=pointer]
+  - paragraph [ref=e220]: Loading
+```

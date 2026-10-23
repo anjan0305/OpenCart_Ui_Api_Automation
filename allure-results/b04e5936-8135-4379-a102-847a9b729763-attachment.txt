@@ -1,0 +1,10 @@
+Map(8) {
+  'itemHeader' => 'MacBook Pro',
+  'itemResult' => '4',
+  'Brand' => 'Apple',
+  'Product Code' => 'Product 18',
+  'Reward Points' => '800',
+  'Availability' => 'Out Of Stock',
+  'price' => '$2,000.00',
+  'ExcludingTax' => '$2,000.00'
+}

@@ -1,0 +1,209 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seamlessTransaction.spec.ts >> create multiple transaction
+- Location: tests\seamlessTransaction.spec.ts:4:5
+
+# Error details
+
+```
+Test timeout of 15000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - 'heading "Basket: 0004" [level=1] [ref=e5]'
+    - navigation [ref=e6]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - button "Reprint" [ref=e9] [cursor=pointer]
+          - list:
+            - listitem:
+              - button "Standard receipt"
+            - listitem:
+              - button "VAT invoice"
+        - listitem [ref=e11]:
+          - button "Search" [ref=e12] [cursor=pointer]
+          - list:
+            - listitem:
+              - generic: Customer
+            - listitem:
+              - generic: Transaction
+        - listitem
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - heading [level=2] [ref=e16]
+      - generic [ref=e19]:
+        - generic [ref=e21]:
+          - generic [ref=e23] [cursor=pointer]:
+            - generic [ref=e25]: Search
+            - textbox "Search" [active] [ref=e26]:
+              - /placeholder: EAN, .com+ order, customer card or receipt
+          - button "Search" [ref=e27] [cursor=pointer]
+        - generic [ref=e29]:
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - generic [ref=e33]:
+                - heading "73MM RHEAD CLASS B SINGLE BRICK" [level=3] [ref=e34]
+                - generic [ref=e35]:
+                  - term [ref=e36]: "EAN:"
+                  - definition [ref=e37]: "5063022504159"
+              - generic [ref=e38]:
+                - term [ref=e39]: "Quantity:"
+                - definition [ref=e40]: x1
+              - generic [ref=e41]:
+                - term [ref=e42]: "Unit Price:"
+                - definition [ref=e43]: £21.20
+                - term [ref=e44]: "Line Value:"
+                - definition [ref=e45]:
+                  - strong [ref=e46]: £21.20
+              - paragraph
+            - generic [ref=e47]:
+              - button "Delete" [ref=e48] [cursor=pointer]
+              - button "Markdown" [ref=e49] [cursor=pointer]
+              - button "Price override" [ref=e50] [cursor=pointer]
+              - textbox [ref=e53]: "1"
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - heading "IG STEEL BOX LINTEL 100 1500MM" [level=3] [ref=e58]
+              - generic [ref=e59]:
+                - term [ref=e60]: "EAN:"
+                - definition [ref=e61]: "5063022504081"
+            - generic [ref=e62]:
+              - term [ref=e63]: "Quantity:"
+              - definition [ref=e64]: x1
+              - term [ref=e65]: Warning
+              - definition [ref=e66]:
+                - generic [ref=e67]: Over 25
+            - generic [ref=e68]:
+              - term [ref=e69]: "Unit Price:"
+              - definition [ref=e70]: £0.89
+              - term [ref=e71]: "Line Value:"
+              - definition [ref=e72]:
+                - strong [ref=e73]: £0.89
+            - paragraph
+          - generic [ref=e76]:
+            - generic [ref=e77]:
+              - heading "DIALL 20MM GRAVEL LARGE" [level=3] [ref=e78]
+              - generic [ref=e79]:
+                - term [ref=e80]: "EAN:"
+                - definition [ref=e81]: "5063022504012"
+            - generic [ref=e82]:
+              - term [ref=e83]: "Quantity:"
+              - definition [ref=e84]: x1
+            - generic [ref=e85]:
+              - term [ref=e86]: "Unit Price:"
+              - definition [ref=e87]: £4.00
+              - term [ref=e88]: "Line Value:"
+              - definition [ref=e89]:
+                - strong [ref=e90]: £4.00
+            - paragraph
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - heading "SKIP17 HD FIRESTONE EPDM SHED ROOF KIT" [level=3] [ref=e95]
+              - generic [ref=e96]:
+                - term [ref=e97]: "EAN:"
+                - definition [ref=e98]: "5063022503886"
+            - generic [ref=e99]:
+              - term [ref=e100]: "Quantity:"
+              - definition [ref=e101]: x1
+            - generic [ref=e102]:
+              - term [ref=e103]: "Unit Price:"
+              - definition [ref=e104]: £560.60
+              - term [ref=e105]: "Line Value:"
+              - definition [ref=e106]:
+                - strong [ref=e107]: £560.60
+            - paragraph
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - heading "BASKET TOTALS" [level=2] [ref=e110]
+          - generic [ref=e111]:
+            - term [ref=e112]: Subtotal
+            - definition [ref=e113]: £586.69
+          - term [ref=e115]:
+            - text: Promotion total
+            - strong [ref=e116]: £0.00
+          - generic [ref=e117]:
+            - term [ref=e118]:
+              - text: Discount total
+              - strong [ref=e119]: £0.00
+            - definition
+          - generic [ref=e120]:
+            - term [ref=e121]: VAT
+            - definition [ref=e122]: £93.43
+            - term [ref=e123]: Total (4 items)
+            - definition [ref=e124]: £586.69
+        - button "Proceed to checkout Next" [ref=e125] [cursor=pointer]:
+          - text: Proceed to checkout
+          - generic [ref=e126]: Next
+    - complementary [ref=e127]:
+      - heading "Basket functions" [level=2] [ref=e128]
+      - button "Returns" [ref=e129] [cursor=pointer]
+      - button "Layaway" [ref=e131] [cursor=pointer]
+      - button "Gift card" [ref=e132] [cursor=pointer]
+      - button "No sale" [ref=e133] [cursor=pointer]
+      - button "Online catalogue" [ref=e135] [cursor=pointer]
+      - button "Price enquiry" [ref=e136] [cursor=pointer]
+      - button "Empty the basket" [ref=e137] [cursor=pointer]
+      - time [ref=e139]:
+        - strong [ref=e140]: 14:33
+        - text: Thu, 15/10/2026
+      - list [ref=e141]:
+        - listitem [ref=e142]:
+          - button "Settings" [ref=e143] [cursor=pointer]
+        - listitem [ref=e144]:
+          - button "Log Out" [ref=e145] [cursor=pointer]
+    - complementary [ref=e146]:
+      - generic [ref=e148]:
+        - heading "Settings" [level=2] [ref=e150]
+        - button "Close" [ref=e152] [cursor=pointer]
+      - generic [ref=e153]:
+        - heading "Details" [level=3] [ref=e154]
+        - list [ref=e155]:
+          - listitem [ref=e156]:
+            - text: "User ID:"
+            - strong [ref=e157]: manager03
+          - listitem [ref=e158]:
+            - text: "Register number:"
+            - strong [ref=e159]: "18"
+          - listitem [ref=e160]:
+            - text: "User name:"
+            - strong [ref=e161]: Manager Test
+          - listitem [ref=e162]:
+            - text: "Browser version:"
+            - strong [ref=e163]: Chrome/153.0.8010.12
+          - listitem [ref=e164]:
+            - text: "Store ID:"
+            - strong [ref=e165]: "1005"
+          - listitem [ref=e166]:
+            - text: "Application version:"
+            - strong [ref=e167]: 8.1.40
+          - listitem [ref=e168]:
+            - text: "Device ID:"
+            - strong [ref=e169]: "100518"
+          - listitem [ref=e170]:
+            - text: "UI version:"
+            - strong [ref=e171]: 6.2.32-patch.0
+      - group "Language" [ref=e172]:
+        - list [ref=e174]:
+          - listitem [ref=e175]:
+            - radio [checked] [disabled]
+            - generic [ref=e177]: English
+          - listitem [ref=e178]:
+            - radio [disabled]
+            - generic [ref=e180]: French
+          - listitem [ref=e181]:
+            - radio [disabled]
+            - generic [ref=e183]: Welsh
+      - generic [ref=e184]:
+        - button "Restart PED" [ref=e185] [cursor=pointer]
+        - button "Generate Pin" [ref=e186] [cursor=pointer]
+```

@@ -1,0 +1,72 @@
+[
+  {
+    id: 8683533,
+    name: 'Anjan Update',
+    email: 'Anjan1792756462856@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8683532,
+    name: 'Anjan Mitra',
+    email: 'Anjan1792756461906@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8683530,
+    name: 'Anjan Mitra',
+    email: 'Anjan1792756461929@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8682487,
+    name: 'Annie Mitra',
+    email: 'Anjan1792751935564@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8682484,
+    name: 'Annie Mitra',
+    email: 'Anjan_test1792751935811@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8682486,
+    name: 'Anjan1792751935367',
+    email: 'Anjan1792751935367@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8682482,
+    name: 'Anjan Update',
+    email: 'Anjan1792751935265@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8682483,
+    name: 'Anjan Mitra',
+    email: 'Anjan1792751934345@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8682480,
+    name: 'Anjan Mitra',
+    email: 'Anjan1792751934326@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8680371,
+    name: 'Meghnath Kaul',
+    email: 'meghnath_kaul@gibson.test',
+    gender: 'male',
+    status: 'active'
+  }
+]
