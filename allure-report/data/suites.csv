@@ -1,6 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","974","get an individual user","chromium","2026-10-14","passed","2026-10-14","","apiTests\goReadyFrameworkTest.spec.ts","",""
-"","961","update an user","chromium","2026-10-14","passed","2026-10-14","","apiTests\goReadyFrameworkTest.spec.ts","",""
-"","746","get all users","chromium","2026-10-14","passed","2026-10-14","","apiTests\goReadyFrameworkTest.spec.ts","",""
-"","1219","delete an user","chromium","2026-10-14","passed","2026-10-14","","apiTests\goReadyFrameworkTest.spec.ts","",""
-"","429","create new user","chromium","2026-10-14","passed","2026-10-14","","apiTests\goReadyFrameworkTest.spec.ts","",""

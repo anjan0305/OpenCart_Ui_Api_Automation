@@ -1,9 +1,0 @@
-[
-  {
-    instancePath: '',
-    schemaPath: '#/required',
-    keyword: 'required',
-    params: { missingProperty: 'id' },
-    message: "must have required property 'id'"
-  }
-]

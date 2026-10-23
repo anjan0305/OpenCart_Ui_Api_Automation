@@ -1,9 +1,0 @@
-[
-  {
-    instancePath: '/status',
-    schemaPath: '#/properties/status/type',
-    keyword: 'type',
-    params: { type: 'boolean' },
-    message: 'must be boolean'
-  }
-]
